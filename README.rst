@@ -54,8 +54,9 @@ Continuous Integration
 -----------------------
 
 Once you have added your project to Github (or any other Travis-supported
-service), turn it on at ``https://travis-ci.org/profile/<user name>``. Future
-pull requests will now be automatically tested.
+service), turn it on at ``https://travis-ci.com/profile/<user name>`` if the
+repository is *private* or ``https://travis-ci.org/profile/<user name>`` if the
+repository is *public*. Future pull requests will now be automatically tested.
 
 Documentation
 --------------
