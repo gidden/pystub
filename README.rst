@@ -1,0 +1,80 @@
+A Python Project Stub
+=====================
+
+This is a stub for a new python project. It contains the following features:
+
+1. Installable module
+2. Unit tests
+3. Continuous integration (via TravisCI)
+4. Automatic documentation
+
+Dependencies
+------------
+
+This stub depends on
+
+1. `nose <https://pypi.python.org/pypi/nose/1.3.7>`_
+2. `Sphinx <https://pypi.python.org/pypi/Sphinx>`_
+
+Making a New Project
+--------------------
+
+Choose a project name and run the following commands replacing ``<project
+name>`` with your choice::
+
+    git clone https://github.com/gidden/pystub.git <project name>
+    cd <project name>
+    ./make_proj.sh <project name>
+
+You should now have a fresh new repository with your project ready to go. You
+can sync it with Github via::
+
+    git remote add origin git@github.com:<user name>/<project name>
+    git push origin master
+
+Installing
+----------
+
+You can install the stub like any other python module::
+
+    ./setup.py install
+
+or for local installations::
+
+    ./setup.py install --user
+
+Testing
+----------
+
+From the root directory, run::
+
+    nosetests -w tests
+
+Continuous Integration
+-----------------------
+
+Once you have added your project to Github (or any other Travis-supported
+service), turn it on at ``https://travis-ci.org/profile/<user name>``. Future
+pull requests will now be automatically tested.
+
+Documentation
+--------------
+
+On *Nix Platforms
+~~~~~~~~~~~~~~~~~
+
+After you install the project locally, you can generate documentation by::
+
+    cd docs
+    make html
+
+You can serve the documentation locally via::
+
+    make serve
+	
+You can then view the docs at http://localhost:8000/build/html/
+
+On Windows
+~~~~~~~~~~~~~~~~~
+
+Follow the above instructions replacing ``make`` with ``./make.bat``.
