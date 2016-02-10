@@ -5,7 +5,7 @@ This is a stub for a new python project. It contains the following features:
 
 1. Installable module
 2. Unit tests
-3. Continuous integration (via TravisCI)
+3. Continuous integration on Linux and Windows
 4. Automatic documentation
 
 Dependencies
@@ -53,10 +53,17 @@ From the root directory, run::
 Continuous Integration
 -----------------------
 
-Once you have added your project to Github (or any other Travis-supported
-service), turn it on at ``https://travis-ci.com/profile/<user name>`` if the
-repository is *private* or ``https://travis-ci.org/profile/<user name>`` if the
-repository is *public*. Future pull requests will now be automatically tested.
+Once you have added your project to Github (or any other supported service), you
+can turn on continuous integration. Once turned on, future pull requests will be
+automatically tested.
+
+Linux builds are tested on TravisCI. You can turn on the new project at
+``https://travis-ci.com/profile/<user name>`` if the repository is *private* or
+``https://travis-ci.org/profile/<user name>`` if the repository is
+*public*. 
+
+Windows builds are tested on `Appveyor <https://ci.appveyor.com/projects>`_. You
+can add it by clicking the "New Project" button.
 
 Documentation
 --------------
