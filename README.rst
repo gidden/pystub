@@ -68,6 +68,23 @@ can add it by clicking the "New Project" button.
 Documentation
 --------------
 
+On ReadTheDocs
+~~~~~~~~~~~~~~~
+
+This repository currently has its documentation on `ReadTheDocs
+<http://pystub.readthedocs.org/en/latest/>`_. You can add any new project and
+have it automatically hosted by doing the following
+
+- on Github
+
+  - Setting -> Webhooks and Services-> Add Service -> ReadTheDocs
+
+- on ReadTheDocs
+
+  - Add the project
+  - On readthedocs.org/projects/<project name>, do Admin -> Advanced Settings ->
+    Check the "Install Project" Box at the top
+
 On *Nix Platforms
 ~~~~~~~~~~~~~~~~~
 
