@@ -9,7 +9,11 @@ fi
 PROJ=$1
 
 rm -rf .git
-find . -type f ! -iname "make_proj.sh" -exec sed -i "s/pystub/$PROJ/g" {} \;
+if [[ uname == "Darwin" ]]; then
+    find . -type f ! -iname "make_proj.sh" -exec sed -i "" "s/pystub/$PROJ/g" {} \;
+else
+    find . -type f ! -iname "make_proj.sh" -exec sed -i "s/pystub/$PROJ/g" {} \;
+fi    
 mv pystub $PROJ
 git init
 git add .
